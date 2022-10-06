@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Level UP</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <script src="/js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+<header>
+    <video class="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1>Level Up</h1>
+        <div class="row items-center">
+            <div class="col-50 text-center">
+                <img alt="prod.png" src="img/prod.png" class="responsive"/>
+            </div>
+            <div class="col-50">
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Ut aliquam</li>
+                    <li>Integer sed</li>
+                </ul>
+                <br>
+                <a href="#order">
+                    <div class="box">Заказать!</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="product-compose">
+    <div class="container">
+        <div class="row items-center">
+            <div class="col-25 text-center flex-column nowrap">
+                <ul>
+                    <li>
+                        <img alt="prod-compose-1.png" src="img/prod-compose-1.png" width="200" height="200"
+                             class="responsive circle"/>
+                        <div class="text">Lorem ipsum dolor sit amet</div>
+                    </li>
+                    <li>
+                        <img alt="prod-compose-2.png" src="img/prod-compose-2.png" width="200" height="200"
+                             class="responsive circle"/>
+                        <div class="text">Nullam sit amet arcu lobortis</div>
+                    </li>
+                    <li>
+                        <img alt="prod-compose-3.png" src="img/prod-compose-3.png" width="200" height="200"
+                             class="responsive circle"/>
+                        <div class="text">Nullam sit amet arcu lobortis</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-50 text-center">
+                <img alt="prod.png" src="img/prod.png" width="250" height="400" class="responsive"/>
+                <br>
+                <br>
+                <a href="#order">
+                    <div class="box">Заказать!</div>
+                </a>
+            </div>
+            <div class="col-25 text-center flex-column nowrap">
+                <ul>
+                    <li>
+                        <img alt="prod-compose-3.png" src="img/prod-compose-3.png" width="200" height="200"
+                             class="responsive circle"/>
+                        <div class="text">Mauris lacinia tellus</div>
+                    </li>
+                    <li>
+                        <img alt="prod-compose-1.png" src="img/prod-compose-1.png" width="200" height="200"
+                             class="responsive circle"/>
+                        <div class="text">Etiam interdum odio</div>
+                    </li>
+                    <li>
+                        <img alt="prod-compose-2.png" src="img/prod-compose-2.png" width="200" height="200"
+                             class="responsive circle"/>
+                        <div class="text">Donec pellentesque</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feedback">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img alt="feedback-1.jpg" src="img/feedback-1.jpg" onclick="plusSlides(1)"
+                 style="width:100%; max-height: 650px;">
+            <h2>Иванов Иван</h2>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas metus eget nulla
+                molestie tempus. Aenean posuere luctus purus. Mauris quis eleifend risus
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img alt="feedback-2.jpg" src="img/feedback-2.jpg" onclick="plusSlides(1)"
+                 style="width:100%; max-height: 650px;">
+            <h2>Петров Сергей</h2>
+            <div class="text">Sed vel felis nec est pretium pharetra et id neque. Quisque molestie euismod eros,
+                porttitor sodales dolor bibendum ut.
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img alt="feedback-3.jpg" src="img/feedback-3.jpg" onclick="plusSlides(1)"
+                 style="width:100%; max-height: 650px; ">
+            <h2>Сидорова Мария</h2>
+            <div class="text">Etiam ullamcorper, turpis non fringilla feugiat, sapien eros imperdiet mauris, a volutpat
+                ipsum dolor et tortor. Morbi ac mauris in ligula faucibus pellentesque.
+            </div>
+        </div>
+    </div>
+    <!-- The dots/circles -->
+    <div class="dots text-center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</section>
+<section class="promo">
+    <div class="container">
+        <div class="row items-center">
+            <div class="col-50 text-center">
+                <img alt="doctor.png" src="img/doctor.png" class="responsive"/>
+            </div>
+            <div class="col-50">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas metus eget
+                    nulla molestie tempus. Aenean posuere luctus purus. Mauris quis eleifend risus. Sed vel felis nec
+                    est pretium pharetra et id neque. Quisque molestie euismod eros, porttitor sodales dolor bibendum
+                    ut. Etiam ullamcorper, turpis non fringilla feugiat, sapien eros imperdiet mauris, a volutpat ipsum
+                    dolor et tortor. Morbi ac mauris in ligula faucibus pellentesque.
+                </div>
+                <br>
+                <a href="#order">
+                    <div class="box">Заказать!</div>
+                </a>
+            </div>
+        </div>
+        <div class="row content-center">
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Morbi sagittis sem sagittis, commodo erat id, hendrerit sapien.</li>
+                <li>Nam commodo nibh non augue consequat, ut iaculis tortor volutpat.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="order-form" id="order">
+    <div class="container">
+        <div class="row text-center flex-column">
+            <h1>Level Up</h1>
+            <div class="timer"></div>
+        </div>
+        <div class="row text-center items-center">
+            <div class="col-50 text-center flex-column">
+                <img alt="prod.png" src="img/prod.png" width="250" height="400" class="responsive"/>
+                <s>10000$</s>
+                <b>5000$</b>
+            </div>
+            <div class="col-50">
+                <form method="post">
+                    <div class="row">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" id="name" required>
+                        <label class="hint" for="name">e.g. John</label>
+                    </div>
+                    <div class="row">
+                        <label for="phone">Телефон</label>
+                        <input type="number" name="phone" id="phone" required>
+                        <label for="phone" class="hint">e.g +79001231234</label>
+                    </div>
+                    <button type="submit" class="btn">Заказать!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container text-center">
+        Сайт разработан в рамках тестового задания и не может быть использован в коммерческих целях. <a
+            href="https://www.freepik.com/free-photo/businessman-dressed-like-superhero-with-thumb-up_1200270.htm#query=man%20thumbs%20up&position=24&from_view=keyword#position=24&query=man%20thumbs%20up">Image
+        by luis_molinero</a>,<a
+            href="https://www.freepik.com/free-photo/smiling-bearded-man-shirt-showing-thumb-up_6871442.htm#query=man%20thumbs%20up&position=22&from_view=keyword">drobotdean</a>
+        on Freepik
+    </div>
+</footer>
+</body>
+<script src="/js/main.js"></script>
+</html>
